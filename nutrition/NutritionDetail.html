@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutrition</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../Tools&Calculator.css" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <!-- Navbar -->
+      <section class="position-relative">
+        <nav class="navbar navbar-expand-lg pb-0">
+          <div class="container pt-4">
+            <div class="d-grid nav-logo">
+              <img
+                src="../assets/image 11.png"
+                alt=""
+                class="img-fluid"
+                onclick="window.location.href = 'http://127.0.0.1:5500/index.html';"
+              />
+              <a
+                class="navbar-brand nav-logo-text"
+                href="http://127.0.0.1:5500/"
+                >Live Healthy. Live Longer.</a
+              >
+            </div>
+            <button
+              data-mdb-collapse-init
+              class="navbar-toggler"
+              type="button"
+              data-mdb-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end gap-4"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav nav-text gap-2 position-relative">
+                <div class="position-relative">
+                  <a
+                    class="nav-link nav-item"
+                    aria-current="page"
+                    href="http://127.0.0.1:5500/"
+                    >Home
+                  </a>
+                </div>
+                <div class="position-relative">
+                  <a class="nav-link" href="#">Article</a>
+                </div>
+                <div class="position-relative">
+                  <a class="nav-link" href="http://127.0.0.1:5500/Fitness.html"
+                    >Fitness</a
+                  >
+                </div>
+                <div class="position-relative">
+                  <a
+                    class="nav-link active"
+                    href="http://127.0.0.1:5500/nutrition/Nutrition.html"
+                    >Nutrition</a
+                  >
+                </div>
+                <div class="position-relative">
+                  <a class="nav-link" href="http://127.0.0.1:5500/WeightManagement/WMHome.html">Weight Management</a>
+                </div>
+                <div class="position-relative">
+                  <a
+                    class="nav-link"
+                    href="http://127.0.0.1:5500/Tools&Calculator.html"
+                    >Tools & Calculator</a
+                  >
+                </div>
+                <div class="position-relative">
+                  <a class="nav-link" href="http://127.0.0.1:5500/member/membership.html">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="./assets/Frame.png" alt="" />
+                      <div>Member</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="position-relative Nav-login-btn-box">
+                <a
+                  data-mdb-ripple-init
+                  class="Nav-login-btn px-4 py-2"
+                  role="button"
+                  href="http://127.0.0.1:5500/login.html"
+                  >Login</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <!-- hero -->
+      <section class="">
+        <div class="position-relative">
+          <img
+            src="../assets/images/image 275.png"
+            alt=""
+            class="img-fluid w-100"
+          />
+        </div>
+      </section>
+
+      <section class="position-relative">
+        <img src="../assets/Vector-bmi.png" alt="" class="vector bmi-1" />
+        <img
+          src="../assets/Vector (1)bmi.png"
+          alt=""
+          class="vector nutrition-2"
+        />
+        <img src="../assets/Vector-bmi.png" alt="" class="vector nutrition-3" />
+        <img
+          src="../assets/images/Group (2).png"
+          alt=""
+          class="vector nutrition-4"
+        />
+        <div class="container">
+          <!-- up -->
+          <div class="pt-5">
+            <h1 class="t-c-line1">Nutrition</h1>
+            <h2 class="nd-line2">Immune System Overview</h2>
+            <p class="t-c-p">
+              First, it’s important to understand that the immune system is a
+              system, not a single entity, and according to Science Direct, it’s
+              “arguably the most complex system in the human body.”(Ref)
+            </p>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div>
+                  <h1 class="nd-line2">Lorem ipsum ipsum</h1>
+                  <h1 class="nd-head-line2">Two Sides of Your Immune System</h1>
+                  <p class="t-c-p">
+                    The innate immune system is inherited and is active from the
+                    moment you were born. It provides a physical barrier to
+                    protect your body and includes your skin, the eye’s cornea,
+                    and the mucous membrane that lines your respiratory,
+                    gastrointestinal, and genitourinary tracts. These barriers
+                    protect against harmful invaders, and when this system
+                    recognizes an invader, it goes into action right away by
+                    surrounding, covering, and eliminating the invader.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6 my-auto">
+                <img
+                  src="../assets/images/iStock-1267930666 2.png"
+                  alt=""
+                  class="img-fluid ms-auto d-block"
+                />
+              </div>
+            </div>
+
+            <div class="mt56">
+              <h1 class="nd-head-line2">Two Sides of Your Immune System</h1>
+              <p class="t-c-p">
+                Your acquired immune system, also called the adaptive immune
+                system, with help from your innate system, makes cells
+                (antibodies) to protect your body from invaders. These
+                antibodies develop after you’ve been exposed to the invader and
+                stay in your body. Acquired immunity creates immunological
+                memory; for example, if you’ve had measles, the acquired
+                immunity is life-long – you’ll never get measles again. In other
+                cases, as with chickenpox, you don’t get lifetime immunity, but
+                after your first exposure, your immune system will recognize the
+                invader and defend against it. Your acquired immune system
+                changes during your life. There’s a normal age‐related decline
+                in immune functions, referred to as immunosenescence, which
+                explains why older people are more prone to get sick and
+                experience diseases more severely. (Ref) It’s also why vaccines
+                don’t work as well in elderly people. (Ref)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 my-auto">
+              <img
+                src="../assets/images/image 242.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-md-7">
+              <h1 class="nd-line2">
+                Basic Strategies to Strengthen Your Immune System
+              </h1>
+              <p class="t-c-p">
+                It makes sense that if you’re looking to boost your immune
+                system, you should adopt a healthy lifestyle as quickly as
+                possible. Remember that your immune system is a system, and
+                every part of your body functions better when you adopt healthy
+                living strategies including:
+              </p>
+              <div class="row mt-3 t-c-p">
+                <div class="col">
+                  <ul>
+                    <li>Choose optimal nutrition</li>
+                    <li>Take Supplements</li>
+                    <li>Exercise regularly</li>
+                    <li>Maintain a healthy weight</li>
+                  </ul>
+                </div>
+                <div class="col-auto">
+                  <ul>
+                    <li>If you drink alcohol, drink only in moderation</li>
+                    <li>Minimize stress</li>
+                    <li>Get adequate sleep</li>
+                    <li>Laugh!</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="t-c-p">
+              You’ve heard the phrase “garbage in, garbage out,” right? That
+              applies to your immune system. If you want your immune system to
+              work well, you need to provide it with good, regular nourishment.
+              A diet of fresh, whole foods with an emphasis on fresh vegetables
+              and fruits is ideal. The bottom line is that there is a
+              correlation between strong immune systems and a good diet. As an
+              example, scientists have long understood that people who live in
+              poverty and are malnourished are more vulnerable to infectious
+              diseases.<br />
+              As we get older it’s even more important to focus on good
+              nutrition. As we age, we burn fewer calories, but our nutrient
+              needs are the same or even higher than when we were younger. It’s
+              therefore important to focus on choosing foods that are as
+              nutrient-dense as possible. <br />
+              When we eat healthy food, we become healthy, and if our goal is to
+              optimize our health and boost our immunity, optimal nutrition is
+              key. Optimal nutrition, superior health and a strong immune system
+              come from a diet focused on nutrient-rich foods and fewer
+              calorie-rich foods. Therefore, the foundation of a nutrition plan
+              designed to boost health and immunity consists of nutrient-dense
+              foods. <br />
+              Photo by cottonbro from Pexels <br />
+              This means focusing on high-nutrient, natural plant foods:
+              vegetables, fruits, beans, nuts, and seeds. Additionally, if it’s
+              possible, choose organic foods, as organic fruits and vegetables
+              deliver 20-40% more antioxidants than conventional fruits and
+              vegetables. (Ref) At the same time, it’s important to reduce or
+              eliminate foods with low nutrients and foods that are actually
+              toxic to the body. <br />
+              If you’re like most people, you probably don’t eat enough
+              vegetables to benefit your health and immune system. Maybe
+              considering the current COVID-19 situation, it’s time to change
+              that – especially considering the evidence that a diet focused
+              primarily on consuming vegetables and fruits is the most important
+              factor in preventing chronic disease and premature death. (Ref 1,
+              2)
+            </p>
+          </div>
+          <div class="mt56">
+            <p class="t-c-p">
+              Over 2500 years ago Hippocrates said, “All disease begins in the
+              gut.” Only in the last 20 years or so has research revealed how
+              correct Hippocrates was. Gut health is critical to overall health.
+              An unhealthy gut contributes to a weakened immune system and
+              diseases including diabetes, obesity, depression, and chronic
+              fatigue syndrome. (Ref 1, 2, 3) On the other hand, brain health is
+              associated with having a healthy gut. <br />
+              The research also shows that the longest living people have very
+              diverse gut microbiomes (the trillions of bacteria and other
+              organisms living in and on us). (Ref) <br />
+              Consider this: your gut microbiome contains between one trillion
+              and ten trillion cells, and an adult person’s body has about one
+              trillion cells. So, we are at least as much bacterial as we are
+              human. <br />
+              Your gut microbiome comprises more than 75 percent of your immune
+              system, and there are several things people commonly do that harm
+              the gut microbiome, including:
+            </p>
+          </div>
+          <div class="t-c-p mt56">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="t-c-p">
+                  <ul>
+                    <li>
+                      Having a diet high in refined carbohydrates, sugar, and
+                      processed foods
+                    </li>
+                    <li>Using antibiotics</li>
+                    <li>
+                      Using medications like birth control and NSAIDs, such as
+                      aspirin, Tylenol & ibuprofen
+                    </li>
+                    <li>Having diets low in fermentable fibers (Ref)</li>
+                    <li>Experiencing chronic stress</li>
+                  </ul>
+                  <p>
+                    A major task of your intestine is to form a defensive
+                    barrier to prevent absorption of damaging substances from
+                    the external environment. (Ref) When your intestinal barrier
+                    becomes permeable – you get “leaky gut” – which is a
+                    condition in which the lining of the small intestine becomes
+                    damaged, causing
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-5 ms-auto">
+                <img
+                  src="../assets/images/iStock-1356114754 2.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <p>
+              To take care of your gut, the first thing you need to do is avoid
+              things that damage your gut microbiome and damage your intestinal
+              barrier. Beyond that, the most common recommendations include
+            </p>
+          </div>
+          <div class="mt56 row t-c-p justify-content-between">
+            <div class="col-md-4">
+              <ul>
+                <li>Avoid foods and chemicals that irritate the gut</li>
+                <li>
+                  Choose a diet of fresh, whole, nutrient-dense foods, mostly
+                  vegetables and fruits
+                </li>
+                <li>Eat a great diversity of foods</li>
+                <li>
+                  Eat plenty of fermentable fibers such as sweet potato, yam,
+                  almonds, etc.
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li>Avoid foods and chemicals that irritate the gut</li>
+                <li>
+                  Choose a diet of fresh, whole, nutrient-dense foods, mostly
+                  vegetables and fruits
+                </li>
+                <li>Eat a great diversity of foods</li>
+                <li>
+                  Eat plenty of fermentable fibers such as sweet potato, yam,
+                  almonds, etc.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt56">
+        <div class="container">
+          <div>
+            <h1 class="nd-line2">Take Care of Your Gut</h1>
+            <p class="t-c-p mt-4">
+              Fruits and vegetables contain lots of antioxidants, which are
+              vitamins, minerals, and phytochemicals that help your body both
+              remove free radicals and control free-radical production. <br />
+              Free radicals are generated both by our bodies and by exposure to
+              X-rays, ozone, cigarette smoke, air pollutants, and industrial
+              chemicals. A balance between free radicals and antioxidants is
+              necessary for our bodies to function properly. If free radicals
+              overwhelm your body’s ability to regulate them, a condition known
+              as oxidative stress ensues, which triggers a number of diseases.
+              <br />
+              Most of the degenerative diseases that afflict humanity are
+              related to free radical reactions. These diseases include
+              atherosclerosis, cancer, inflammatory joint disease, asthma,
+              diabetes, senile dementia and degenerative eye disease. (Ref)
+              <br />
+              It’s because of this potential for free radicals to cause harm
+              that including antioxidants in our diets is so important, since
+              antioxidants assist our bodies in coping with oxidative stress.
+              This approach of consuming dietary antioxidants as functional
+              foods is critical for managing diseases, since antioxidants are
+              the natural enemies of free radicals. <br />
+              That said, free radicals are not all bad and can help our immune
+              cells and remove damaged cells. The problem with free radicals is
+              that without regular consumption of antioxidants and
+              phytochemicals to keep them in check, they begin to destroy normal
+              tissue. <br />
+              Not getting enough antioxidants can lead to an excess of free
+              radicals, which creates inflammation and leads to premature aging.
+              Vitamin C, vitamin E, folate, selenium, and alpha-and
+              beta-carotene, as well as various other phytochemicals, have
+              antioxidant effects. The most important sources of natural
+              antioxidants come from routinely consuming vegetables and fruits,
+              beans, nuts and seeds.
+              <br />
+              Vegetables are especially rich in antioxidants. Eating lots of
+              vegetables - especially green vegetables - is an easy way to get
+              lots of antioxidants into your diet. Antioxidants are minimal from
+              animal products, and absent in processed foods.
+            </p>
+          </div>
+
+          <div class="mt56">
+            <div class="row">
+              <div class="col-md-5">
+                <img
+                  src="../assets/images/iStock-1267930666 2.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-7">
+                <div>
+                  <h1 class="nd-line2">Which Foods Boost Immunity?</h1>
+                  <h1 class="nd-head-line2">Two Sides of Your Immune System</h1>
+                  <p class="t-c-p">
+                    Cruciferous vegetables such as broccoli, kale, cauliflower,
+                    and cabbage are essential disease-fighters because they
+                    sustain intestinal immune function. (Ref) The beneficial
+                    effects of cruciferous vegetables on human health have been
+                    somewhat linked to phytochemicals. They prevent oxidative
+                    stress, induce detoxification enzymes, stimulate the immune
+                    system, decrease the risk of cancers, inhibit malignant
+                    transformation and carcinogenic mutations, and reduce the
+                    inhibit malignant transformation and carcinogenic mutations,
+                    and reduce the
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="t-c-p">
+              To take care of your gut, the first thing you need to do is avoid
+              things that damage your gut microbiome and damage your intestinal
+              barrier. Beyond that, the most common recommendations include
+            </p>
+          </div>
+
+          <div class="mt56">
+            <div class="row">
+              <div class="col-md-7">
+                <div>
+                  <h1 class="nd-line2">Mushrooms</h1>
+                  <p class="t-c-p">
+                    Mushrooms contain many unusual disease-fighting compounds
+                    that have been used in folk medicine for centuries and are
+                    just beginning to be understood scientifically. What’s
+                    important to know is that mushrooms possess many unusual
+                    disease-fighting compounds that support our body's ability
+                    to react quickly and powerfully to viruses and bacteria.
+                    Mushroom phytochemicals contain anti-inflammatory and
+                    immune-modulating properties that may also help with
+                    autoimmune diseases. (Ref 1, 2).The compounds found in
+                    simple mushrooms have been shown in animal experiments and
+                    cell cultures to boost immunity. White,
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <img
+                  src="../assets/images/iStock-1351039870 1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <p class="t-c-p">
+              cremini, portobello, oyster, maitake, and reishi mushrooms have
+              all been shown to have anticancer effects. Varieties like
+              shiitake, maitake and reishi are particularly good for staying
+              healthy during the cold and flu season. (Ref 1, 2, 3, 4, 5)
+            </p>
+          </div>
+
+          <div class="mt56">
+            <div class="row">
+              <div class="col-md-5">
+                <img
+                  src="../assets/images/iStock-1452233695 1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-7">
+                <div>
+                  <h1 class="nd-line2">Onions & Garlic</h1>
+                  <p class="t-c-p">
+                    Mushrooms contain many unusual disease-fighting compounds
+                    that have been used in folk medicine for centuries and are
+                    just beginning to be understood scientifically. What’s
+                    important to know is that mushrooms possess many unusual
+                    disease-fighting compounds that support our body's ability
+                    to react quickly and powerfully to viruses and bacteria.
+                    Mushroom phytochemicals contain anti-inflammatory and
+                    immune-modulating properties that may also help with
+                    autoimmune diseases. (Ref 1, 2).The compounds found in
+                    simple mushrooms have been shown in animal experiments and
+                    cell cultures to boost immunity. White,
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="t-c-p">
+              To take care of your gut, the first thing you need to do is avoid
+              things that damage your gut microbiome and damage your intestinal
+              barrier. Beyond that, the most common recommendations include
+            </p>
+          </div>
+
+          <div class="mt56">
+            <div class="row">
+              <div class="col-md-7">
+                <div>
+                  <h1 class="nd-line2">Berries & Pomegranates</h1>
+                  <p class="t-c-p">
+                    Berries are rich sources of bioactive compounds with
+                    antiviral properties. They possess large quantities of
+                    polyphenols (plant compounds that bring health benefits) and
+                    polysaccharides (complex carbohydrates essential for healthy
+                    nutrition), which stimulate human immune systems through a
+                    variety of different mechanisms proven to help with
+                    influenza. (Ref 1, 2) All berries and their juices—including
+                    blueberries, blackberries, raspberries, acai berries, goji
+                    berries, elderberries, and strawberries—are superfoods.
+                    Pomegranates possess antioxidant, anticarcinogenic, and
+                    anti-inflammatory properties that may help prevent cancer,
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <img
+                  src="../assets/images/iStock-1444289060 1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <p class="t-c-p">
+              cremini, portobello, oyster, maitake, and reishi mushrooms have
+              all been shown to have anticancer effects. Varieties like
+              shiitake, maitake and reishi are particularly good for staying
+              healthy during the cold and flu season. (Ref 1, 2, 3, 4, 5)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt56 t-c-p">
+        <div class="container">
+          <div>
+            <h1 class="nd-line2">Take Care of Your Gut</h1>
+            <p class="t-c-p mt-4">
+              Lots of supplements claim to boost our immune system, but the
+              problem is that proving that an herb—or any substance, for that
+              matter—can enhance immunity is very complicated. This is in part
+              due to the complexity of the immune system. <br />
+              What we do know for sure is that a deficiency in certain minerals
+              and antioxidants can impair your immune system. It is precisely
+              for that reason that the best thing you can do for yourself is to
+              adopt a diet consisting of organic, fresh whole foods, and mostly
+              vegetables and fruits. By doing so, you’ll be getting most of the
+              compounds our bodies need. That said, it doesn’t hurt to
+              supplement with a multi-vitamin. <br />
+              Scientists don't know, for example, whether an herb that seems to
+              raise the levels of antibodies in the blood is actually doing
+              anything beneficial for overall immunity. <br />
+            </p>
+            <div class="row mt-4">
+              <div class="col-md-7">
+                <div>
+                  <ul>
+                    <li>Amla Powder (Phyllanthus emblica) (Ref 1, 2)</li>
+                    <li>Astragalus (Ref)</li>
+                    <li>Echinacea (Ref)</li>
+                    <li>
+                      Ginseng (In particular, Panax Ginseng) (Ref 1, 2, 3, 4)
+                    </li>
+                    <li>Ginger (Zingiber officinale) (Ref)</li>
+                    <li>Glutamine (Ref 1, 2, 3)</li>
+                    <li>Green Chireta (Andrographis paniculate) (Ref)</li>
+                    <li>Green Tea (Camellia sinensis) (Ref: 1, 2, 3)</li>
+                    <li>Magnesium (</li>
+                    <li>NAC (Ref 1, 2, 3,)</li>
+                    <li>Spirulina (Arthrospira platensis) (Ref: 1, 2, 3, 4)</li>
+                    <li>Turmeric (Curcuma longa) (Ref: 1, 2 )</li>
+                    <li>Vitamin C</li>
+                    <li>Vitamin D (Ref 1, 2, 3)</li>
+                    <li>Zinc (Ref)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <img
+                  src="../assets/images/iStock-1327131079 2.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt56">
+        <div class="container">
+          <div>
+            <h1 class="nd-line2">How Does Stress Affect Your Immune System?</h1>
+            <p class="t-c-p mt-4">
+              It doesn’t take a scientist or a doctor to prove that there’s a
+              relationship between the mind and the body. Anyone that’s awakened
+              at night with their heart racing from a stressful thought can
+              attest to that. <br />
+              Not all stress is bad, however. If you think about the
+              “fight-or-flight” response, it’s a natural defense mechanism. So,
+              it’s not short-term stress that’s the problem, it’s chronic,
+              long-term stress that can suppress your immunity, increasing your
+              susceptibility to infections and even cancer. (Ref 1, 2, 3) <br />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt56">
+        <div class="container">
+          <div>
+            <h1 class="nd-line2">What Works to Manage Stress?</h1>
+            <p class="t-c-p mt-4">
+              It doesn’t take a scientist or a doctor to prove that there’s a
+              relationship between the mind and the body. Anyone that’s awakened
+              at night with their heart racing from a stressful thought can
+              attest to that. <br />
+              Not all stress is bad, however. If you think about the
+              “fight-or-flight” response, it’s a natural defense mechanism. So,
+              it’s not short-term stress that’s the problem, it’s chronic,
+              long-term stress that can suppress your immunity, increasing your
+              susceptibility to infections and even cancer. (Ref 1, 2, 3) <br />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt56">
+        <div class="container">
+          <div>
+            <h1 class="nd-line2">
+              How Does Exercise Support Your Immune System?
+            </h1>
+            <p class="t-c-p mt-4">
+              “Being active has enormous health and well-being benefits.
+              Physical activity is important in the management of long-term
+              diseases, but, it is even more important in the prevention of many
+              other common diseases. I believe that if physical activity was a
+              drug it would be classed as a wonder drug, which is why I would
+              encourage everyone to get up and be active.” <br />
+              -Professor Dame Sue Bailey, Chair of the Academy of Medical Royal
+              Colleges (AOMC), in the Forward to the AOMC’s report on exercise:
+              (Ref) <br />
+              Everyone knows that regular exercise is important for healthy
+              living, and it’s not new information: over 2300 years ago,
+              Aristotle said that “a man falls into ill-health as a result of
+              not caring for exercise.” Exercise improves cardiovascular health,
+              lowers blood pressure, helps control body weight, and protects
+              against a variety of diseases. Exercise also contributes to
+              general good health and to a healthy immune system by promoting
+              good circulation, which allows the cells and substances of the
+              immune system to move through the body freely and do their job
+              efficiently. <br />
+              The amount and type of physical activity you get is related to
+              your health and the strength of your immune system. Virtually all
+              the global health organizations agree that everybody should get at
+              least 30 minutes of moderate physical activity, like a brisk walk,
+              every day. You can mix it up by doing your 30 minutes as 3
+              10-minute walks but exercising in at least 10-minute blocks is
+              recommended – it’s not considered enough to just walk a few
+              minutes. (Ref 1, 2, 3) <br />
+              The protective effect of regular moderate exercise is significant
+              – there’s a 40-50% reduction in the number of days people are
+              sick, and exercise can reduce the risk and severity of respiratory
+              viral infection. (Ref) <br />
+              Studies show that exercise boosts our immune systems, and that
+              moderate exercise is best. (Ref 1, 2, 3, 4, 5, 6) Heavy exertion
+              lasting longer than 90 minutes should be avoided. (Ref 1, 2) The
+              takeaway is that it’s important to exercise enough to build your
+              immune system, but too much exercise can actually reduce your
+              immune function, as it stresses your body. As figure 1, Optimal
+              Exercise shows, regular moderate intensity exercise improves the
+              immune response to respiratory viral infections. <br />
+            </p>
+            <p class="mt56 t-c-p">
+              It’s also important to diversify your physical activity to include
+              aerobic fitness, strength and flexibility. (Ref 1, 2, 3) As we get
+              older, including balance into your fitness routine is also
+              important, not so much as it relates to immunity, but to prevent
+              falls as we age. (Ref) <br />
+              To get an idea of what types of exercise you should make a regular
+              part of your lifestyle, see the activity pyramid below (figure 2).
+              The activities at the base of the pyramid should be done daily,
+              and as you go up the pyramid, the activities are less frequent but
+              more intense. <br />
+              If you’re presently inactive, start with the activities at the
+              base, and as you get stronger and more fit, move up the pyramid.
+              Activities higher up in the pyramid produce many benefits in your
+              aerobic fitness, strength and flexibility. <br />
+              There are a few things you can take into consideration, which
+              should be common sense. For example, you can replace daily
+              moderate exercise with running 20-30 minutes, 3 to 4 times per
+              week. The same amount of energy is expended in these two examples,
+              so the health benefits are considered to be the same. <br />
+              That being said, regular movement is advised – you’ve heard the
+              phrase “sitting is the new smoking.” The more regular movement you
+              get, the better off you are. <br />
+              Studies also show a correlation between regular exercise and
+              longevity (Ref 1, 2), but it’s important to note that a moderate
+              amount of exercise provides the benefits: too much exercise, or
+              none at all, both aren’t good for you. With jogging, for example,
+              between 1 and 2.5 hours per week at a slow to moderate pace, 2 or
+              3 times per week brings the greatest health and longevity
+              benefits. <br />
+              The ideal amount of exercise to promote longevity is between 7-12
+              hours of exercise per week (Ref 1, 2). Dr. Valter Longo, one of
+              the world’s leading experts on longevity, recommends: <br />
+            </p>
+            <ul class="t-c-p">
+              <li>An hour of fast walking every day</li>
+              <li>
+                At least medium intensity cardiovascular exercise 2.5-5 hours
+                per week
+              </li>
+              <li>Resistance training at least 2 times per week</li>
+            </ul>
+
+            
+          <div class="mt56">
+            <div class="row">
+              <div class="col-md-5">
+                <img
+                  src="../assets/images/iStock-1356114754 2.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-7">
+                <div>                  
+                  <p class="t-c-p">
+                    Physically active individuals run half the risk of dying from cardiovascular disease as sedentary persons of the same age. Physical activity also decreases the risk of having high blood pressure, age-related diabetes and colon cancer. Quality of life is also improved by physical activity due to greater mental well-being and better physical health. There is also strong support for physically active individuals having a lower risk of being affected by brittle bones, bone fractures caused by falls, blood clots, obesity, and mental disorders. <br>
+Despite the COVID-19 “shelter-in-place” recommendations, you can still exercise outside, as long as you adhere to social distancing guidelines. Just 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="t-c-p mt-4">
+              Lots of supplements claim to boost our immune system, but the problem is that proving that an herb—or any substance, for that matter—can enhance immunity is very complicated. This is in part due to the complexity of the immune system. <br>
+What we do know for sure is that a deficiency in certain minerals and antioxidants can impair your immune system. It is precisely for that reason that the best thing you can do for yourself is to adopt a diet consisting of organic, fresh whole foods, and mostly vegetables and fruits. By doing so, you’ll be getting most of the compounds our bodies need. That said, it doesn’t hurt to supplement with a multi-vitamin. <br>
+Scientists don't know, for example, whether an herb that seems to raise the levels of antibodies in the blood is actually doing anything beneficial for overall immunity.
+
+            </p>
+          </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="mt56">
+        <div class="container">
+          <div>
+            <h1 class="nd-line2">Is Laughter Really Medicine?
+            </h1>
+            <p class="t-c-p mt-4">
+              We’ve all heard the phrase “laughter is the best medicine,” and it turns out that there’s at least some truth to this notion. Laughter literally triggers healthy physical and emotional changes in your body, strengthening your immune system, improving your mood, and reducing or eliminating your stress. <br>
+At an intuitive level, this makes sense. The effects of humor and laughter are numerous: Humor is not only instinctive and a basic human need, but it also is very good medicine. Laughter boosts the immune system, lowers blood pressure, reduces stress hormones, and is linked to healthy functioning organs. (Ref 1, 2, 3, 4, 5)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt56">
+        <div class="container">
+          <div>
+            <h1 class="nd-line2">Summary            </h1>
+            <p class="t-c-p mt-4">
+              We trust that this article has provided you with things you can do to boost your immune system. Does that mean you won’t get sick? Are there any guarantees? Of course not. COVID-19 is a new and terrible virus. What you can take away from this article is that there are a number of things you can do to boost your immune system that are in your control, and if your immune system is functioning even a little better, you might be better able to recover in the unfortunate case that you do get sick.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+
+      <section class="footer-section mt56">
+        <!-- Footer -->
+        <footer class="text-center text-md-start pt-5">
+          <!-- Grid container -->
+          <div class="container pt-5">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <p class="footer-body-left">
+                  Getting Fit After 50 – or at any time of your life – has many
+                  benefits. For those of us over 50, the benefits include
+                  improved weight management ability, reduction of age-r
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div
+                class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4 footer-right-links"
+              >
+                <h5 class="text-uppercase">Lorem ipsum</h5>
+
+                <ul class="list-unstyled mb-0 footer-right-links">
+                  <li>
+                    <a href="#!" class="">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="">Link 3</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div
+                class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4 footer-right-links"
+              >
+                <h5 class="text-uppercase">Lorem ipsum</h5>
+
+                <ul class="list-unstyled mb-0 footer-right-links">
+                  <li>
+                    <a href="#!" class=" ">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="">Link 3</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div
+                class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4 footer-right-links"
+              >
+                <h5 class="text-uppercase">Lorem ipsum</h5>
+
+                <ul class="list-unstyled mb-0 footer-right-links">
+                  <li>
+                    <a href="#!" class="">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="">Link 3</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            <!-- Copyright -->
+            <div class="row pt-5 Copyright">
+              <div class="col-md-6 text-center text-md-start">
+                © Copyright 2023 Fit after 50 Design
+              </div>
+              <div class="col-md-6 pe-md-5">
+                <div
+                  class="d-flex gap-3 align-items-center justify-content-center justify-content-lg-end"
+                >
+                  <div class="pe-2">Follow Us On</div>
+                  <img src="../assets/fb.png" alt="" class="img-fluid" />
+                  <img src="../assets/insta.png" alt="" class="img-fluid" />
+                  <img src="../assets/twitter.png" alt="" class="img-fluid" />
+                  <img src="../assets/youtube.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid container -->
+        </footer>
+        <!-- Footer -->
+      </section>
+    </div>
+  </body>
+</html>

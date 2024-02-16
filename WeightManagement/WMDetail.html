@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight management</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../Tools&Calculator.css" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div>
+      <!-- Navbar -->
+      <section class="position-relative">
+        <nav class="navbar navbar-expand-lg pb-0">
+          <div class="container pt-4">
+            <div class="d-grid nav-logo">
+              <img
+                src="../assets/image 11.png"
+                alt=""
+                class="img-fluid"
+                onclick="window.location.href = 'http://127.0.0.1:5500/index.html';"
+              />
+              <a
+                class="navbar-brand nav-logo-text"
+                href="http://127.0.0.1:5500/"
+                >Live Healthy. Live Longer.</a
+              >
+            </div>
+            <button
+              data-mdb-collapse-init
+              class="navbar-toggler"
+              type="button"
+              data-mdb-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end gap-4"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav nav-text gap-2 position-relative">
+                <div class="position-relative">
+                  <a
+                    class="nav-link nav-item"
+                    aria-current="page"
+                    href="http://127.0.0.1:5500/"
+                    >Home
+                  </a>
+                </div>
+                <div class="position-relative">
+                  <a class="nav-link" href="#">Article</a>
+                </div>
+                <div class="position-relative">
+                  <a class="nav-link" href="http://127.0.0.1:5500/Fitness.html"
+                    >Fitness</a
+                  >
+                </div>
+                <div class="position-relative">
+                  <a
+                    class="nav-link "
+                    href="http://127.0.0.1:5500/nutrition/Nutrition.html"
+                    >Nutrition</a
+                  >
+                </div>
+                <div class="position-relative active">
+                  <a class="nav-link" href="http://127.0.0.1:5500/WeightManagement/WMHome.html">Weight Management</a>
+                </div>
+                <div class="position-relative">
+                  <a
+                    class="nav-link"
+                    href="http://127.0.0.1:5500/Tools&Calculator.html"
+                    >Tools & Calculator</a
+                  >
+                </div>
+                <div class="position-relative">
+                  <a class="nav-link" href="#">
+                    <div class="d-flex align-items-center gap-2">
+                      <img src="./assets/Frame.png" alt="" />
+                      <div>Member</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="position-relative Nav-login-btn-box">
+                <a
+                  data-mdb-ripple-init
+                  class="Nav-login-btn px-4 py-2"
+                  role="button"
+                  href="http://127.0.0.1:5500/login.html"
+                  >Login</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <!-- hero -->
+      <section class="">
+        <div class="position-relative">
+          <img
+            src="../assets/images/image 274.png"
+            alt=""
+            class="img-fluid w-100"
+          />
+        </div>
+      </section>
+
+      <section class="position-relative">
+        <img src="../assets/Vector-bmi.png" alt="" class="vector bmi-1" />
+        <img
+          src="../assets/Vector (1)bmi.png"
+          alt=""
+          class="vector nutrition-2"
+        />
+        <img src="../assets/Vector-bmi.png" alt="" class="vector nutrition-3" />
+        <img
+          src="../assets/images/Group (2).png"
+          alt=""
+          class="vector nutrition-4"
+        />
+        <div class="container">
+          <!-- up -->
+          <div class="pt-5">
+            <h1 class="t-c-line1">Weight management</h1>
+            <h2 class="nd-line2">9 Ways to Spring into Fitness</h2>
+            <p class="t-c-p">
+              First, it’s important to understand that the immune system is a system, not a single entity, and according to Science Direct, it’s “arguably the most complex system in the human body.”(Ref)
+            </p>
+            <div class="mt56">
+
+              <div class="row ">
+                <div class="col-md-6">
+                  <div>
+                    <h1 class="nd-line2 ">David Schutz</h1>
+                    <h1 class="nd-head-line2">Two Sides of Your Immune System</h1>
+                    <p class="t-c-p">
+                      Springtime is just around the corner, so it’s time to start thinking about what you can do to get outside for your anti-aging fitness exercise routine and paying more attention to your diet. As you know, adopting a lifestyle of regular fitness is one of the best things you do to add healthy years to your life. Additionally, regular exercise over the age of 50 keeps your mind sharp and improves cognitive function, including memory.
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="col-md-6 my-auto">
+                  <img
+                    src="../assets/images/image 253.png"
+                    alt=""
+                    class="img-fluid ms-auto d-block"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <h1 class="nd-head-line2">Lorem ipsum lorem ipsum</h1>
+              <div class="t-c-p">
+                <ol>
+
+                  <li>Lift weights. If you’re not already practicing resistance training of some kind, you should be all year round. Research shows that strength training as you age is good for your bones, your balance, and preventing age-related loss of muscle, which leads to all sorts of problems. For generations, we were taught that getting frail and creaky was inevitable. Not true!</li>
+                 <li> Hit the trails. Depending on how the weather where you live, you might be feeling cooped up indoors. So be sure to enjoy your town’s walkability features on trails or parks by walking, jogging, or biking. If you aren’t familiar with what’s available, go to AllTrails and enter your town or city name, and you’ll find the trails near you.</li>
+                <li>  Get Swimming. One of the easiest on your body forms of exercise you can get is swimming. It’s gentle on your bones and joints, and it’s good cardiovascular exercise. As the weather warms up, think about getting to the pool and doing some laps.</li>
+                 <li> Go for Moderate Intensity Exercise. As it warms up, it’s time to hit the tennis courts, play some basketball, go for power walks, or hit the golf course. These moderate-intensity exercises are great for weight loss, and for most people, it’s more accessible than more intense forms of exercise.</li>
+                 <li> Stay fresh. Farmer's markets should be popping up soon. They’re a great way to eat fresh and eat local, and to be sure you’re getting all the necessary nutrients along the way. Remember that a diet focused on fresh, whole foods, mostly plants, is the focus of the longest-lived, healthiest people.</li>
+                 <li> Go for gardening. Studies show that gardening is not only beneficial for your mental & physical health, and also reveals that there’s a connection between gardening and longevity. It’s helpful to have strength, flexibility to work in your garden regularly. You don’t want to bounce up off the couch after six months and just start.</li>
+                 <li> Keep your regular appointments. Have you checked in with your doctor lately for Rx refills – and a discussion about seasonal allergies that might be coming back? Or stress related to Covid-19 and weather? Or a few pounds you might’ve gained? Resist the urge to shrug off the dentist, the eye doctor, and others who help keep you moving.</li>
+                 <li> Spring cleaning. How many of us have overflowing junk drawers and frightening hall closets at this point? Start the season right by scrubbing the decks and getting your household organized – at least for the next few months.</li>
+                 <li> Set a date. Schedule a date this spring to run a 5K, host a socially distanced picnic with friends you haven’t seen lately, or drive to a scenic spot for a hike. Before long, we’ll be able to sub those events with a trip to the beach or, at least, a day by the pool. This will be good practice!</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+   
+
+      <section class="mt56">
+        <div class="container">
+          
+
+          <div class="">
+            <div class="row">
+              <div class="col-md-5">
+                <img
+                  src="../assets/images/image 254.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-md-7">
+                <div>
+                  <h1 class="nd-head-line2">Lorem ipsum lorem ipsum</h1>
+                  <p class="t-c-p">
+                    The anti-aging health benefits of eating right and exercise are well understood. Remember, you have a lot of control over what kind of aging years you experience. When you adopt a lifestyle of healthy nutrition and regular exercise, you give yourself the gift of getting fit after 50. And it’s not just for you. Your family and friends all benefit.Regular exercise and a healthy diet promote longevity and prevent age-related diseases like dementia, Alzheimer’s, Diabetes Type 2, and others. Put yourself in the driver’s seat to control your outcome.
+
+
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p class="t-c-p">
+              As Bette Midler sings, “Just remember in the winter, far beneath the bitter snows… Lies a seed that with the sun’s love, in the spring becomes the rose.”
+
+            </p>
+          </div>
+
+
+      
+
+         
+        </div>
+      </section>
+
+ 
+
+      <!-- Footer -->
+
+      <section class="footer-section mt56">
+        <!-- Footer -->
+        <footer class="text-center text-md-start pt-5">
+          <!-- Grid container -->
+          <div class="container pt-5">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <p class="footer-body-left">
+                  Getting Fit After 50 – or at any time of your life – has many
+                  benefits. For those of us over 50, the benefits include
+                  improved weight management ability, reduction of age-r
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div
+                class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4 footer-right-links"
+              >
+                <h5 class="text-uppercase">Lorem ipsum</h5>
+
+                <ul class="list-unstyled mb-0 footer-right-links">
+                  <li>
+                    <a href="#!" class="">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="">Link 3</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div
+                class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4 footer-right-links"
+              >
+                <h5 class="text-uppercase">Lorem ipsum</h5>
+
+                <ul class="list-unstyled mb-0 footer-right-links">
+                  <li>
+                    <a href="#!" class=" ">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="">Link 3</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div
+                class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4 footer-right-links"
+              >
+                <h5 class="text-uppercase">Lorem ipsum</h5>
+
+                <ul class="list-unstyled mb-0 footer-right-links">
+                  <li>
+                    <a href="#!" class="">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="">Link 3</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            <!-- Copyright -->
+            <div class="row pt-5 Copyright">
+              <div class="col-md-6 text-center text-md-start">
+                © Copyright 2023 Fit after 50 Design
+              </div>
+              <div class="col-md-6 pe-md-5">
+                <div
+                  class="d-flex gap-3 align-items-center justify-content-center justify-content-lg-end"
+                >
+                  <div class="pe-2">Follow Us On</div>
+                  <img src="../assets/fb.png" alt="" class="img-fluid" />
+                  <img src="../assets/insta.png" alt="" class="img-fluid" />
+                  <img src="../assets/twitter.png" alt="" class="img-fluid" />
+                  <img src="../assets/youtube.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid container -->
+        </footer>
+        <!-- Footer -->
+      </section>
+    </div>
+  </body>
+</html>
